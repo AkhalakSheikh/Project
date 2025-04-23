@@ -1,0 +1,23 @@
+.container {
+    display: flex;
+    flex-direction: row; 
+    justify-content: center;
+    align-items: center;   
+    padding: 5vh 0vh;
+    
+}
+
+.maincontainer{
+    border: 2px solid gray;
+    width: 100%;
+    text-align: center;
+}
+
+.fieldmargin{
+    margin: 0% 1%;
+}
+
+.buttonmargin{
+    margin: -23% 0% 0% 0%;
+}
+   
