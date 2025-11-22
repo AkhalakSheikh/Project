@@ -1,0 +1,54 @@
+<h1 class="aline">subject Example</h1>
+<div style="width: 50%;">
+    <div class="rowFlex">
+        <div>
+            <h2>subject Example</h2>
+            <div *ngFor="let control of sub">
+                <app-reusableForms [form]="subForm" [controls]="control"></app-reusableForms>
+            </div>
+            <button mat-raised-button (click)="getSubject()">Submit Subject Values</button>
+        </div>
+        <div class="rowFlex">
+            <p *ngFor="let value of subdata">{{value}}</p>
+        </div>
+    </div>
+
+    <div class="rowFlex">
+        <div>
+            <h2>BehaviorSubject Example</h2>
+            <div *ngFor="let control of Bsub">
+                <app-reusableForms [form]="BsubForm" [controls]="control"></app-reusableForms>
+            </div>
+            <button mat-raised-button (click)="getBehaviourSubject()">Submit BehaviorSubject Values</button>
+        </div>
+        <div class="rowFlex">
+            <p *ngFor="let value of Bsubdata">{{value}}</p>
+        </div>
+    </div>
+
+    <div class="rowFlex">
+        <div>
+            <h2>AsyncSubject Example</h2>
+            <div *ngFor="let control of Asub">
+                <app-reusableForms [form]="AsubForm" [controls]="control"></app-reusableForms>
+            </div>
+            <button mat-raised-button (click)="getAsyncSubject()">Submit AsyncSubject Values</button>
+        </div>
+        <div class="rowFlex">
+            <p *ngFor="let value of Asubdata">{{value}}</p>
+        </div>
+    </div>
+
+    <div class="rowFlex">
+        <div>
+            <h2>ReplaySubject Example</h2>
+            <div *ngFor="let control of Rsub">
+                <app-reusableForms [form]="RsubForm" [controls]="control"></app-reusableForms>
+            </div>
+            <button mat-raised-button (click)="getReplaySubject()">Submit ReplaySubject Values</button>
+        </div>
+        <div class="rowFlex">
+            <p *ngFor="let value of Rsubdata">{{value}}</p>
+        </div>
+    </div>
+</div>

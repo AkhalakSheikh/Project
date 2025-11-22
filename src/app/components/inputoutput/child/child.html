@@ -1,0 +1,16 @@
+
+<div class="rowFlex">
+<div style="padding:0% 5%;">
+    <h1 class="aline">Send value to Parent</h1>
+    <div *ngFor="let control of queations">
+        <app-reusableForms [form]="outputform" [controls]="control"></app-reusableForms>
+    </div>
+    <div>
+        <button mat-raised-button (click)="send()">Send To parent</button>
+    </div>
+</div>
+<div style="padding:0% 5%;">
+    <h1 class="aline">input value from Parent</h1>
+    <h2>{{valuefromparent}}</h2>
+</div>
+</div>

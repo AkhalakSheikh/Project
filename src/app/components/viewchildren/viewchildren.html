@@ -1,0 +1,20 @@
+<div  class="aline">
+    <h1>viewchildren Example</h1>
+
+<div>
+    <p #getelement>My name is akhalak</p>
+    <p #getelement>My sername is sheikh</p>
+    <p #getelement>My father name is Mustafa</p>
+</div>    
+
+<div>
+    <button mat-raised-button (click)="getChildrens()">Get Children</button>
+</div>
+
+
+<div *ngFor="let i of elementArray">
+   <p>{{i}}</p>
+</div>
+
+
+</div>

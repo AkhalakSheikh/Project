@@ -1,0 +1,27 @@
+<div class="aline">
+    <h1>RxJs Operators</h1>
+</div>
+
+<div>
+    <div>
+        <h2>Map Operator</h2>
+        <span>Get values from 1 to 100 which is selected by you</span>
+        <span><button mat-raised-button (click)="getdata('map','+')">++</button></span>
+        <span>{{mapcount()}}</span>
+        <span><button mat-raised-button (click)="getdata('map','-')">--</button></span>
+        @for (item of maparr; track $index) {
+        <button>{{item}}</button>
+        }
+    </div>
+
+    <div>
+        <h2>Filter Operator</h2>
+        <span>Get values from 1 to 100 which is selected by you</span>
+        <span><button mat-raised-button (click)="getdata('filter','+')">++</button></span>
+        <span>{{filtercount()}}</span>
+        <span><button mat-raised-button (click)="getdata('filter','-')">--</button></span>
+        @for (item of filterarr; track $index) {
+        <button>{{item}}</button>
+        }
+    </div>
+</div>

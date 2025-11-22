@@ -1,0 +1,26 @@
+<div style="text-align: center;flex-direction: row;display: flex;">
+   <div style="width: 80%;">
+      <h1>Practice Project</h1>
+   </div>
+   <div style="float: right;width: 20%;">
+      <small>Rout Flags</small>
+      <section class="example-section">
+         <div *ngFor="let rout of routflags">
+             <mat-checkbox class="example-margin" (change)="update($event.checked)">{{rout}}</mat-checkbox>
+         </div>
+      </section>
+   </div>
+</div>
+
+<mat-drawer-container class="example-container">
+   <mat-drawer mode="side" opened>
+      <div *ngFor="let path of paths " style="margin: 5% 0%;">
+         <button mat-raised-button (click)="navigatetopath(path)" style="width: 100%;">{{path}}</button>
+      </div>
+   </mat-drawer>
+   <mat-drawer-content>
+     <mat-card style="height: 95%; width: 100%; padding: 5%;overflow-y: scroll;">
+       <router-outlet />
+     </mat-card>
+   </mat-drawer-content>
+</mat-drawer-container>

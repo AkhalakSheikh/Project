@@ -1,0 +1,13 @@
+
+<div class="aline">
+   <h1>Reusable Forms</h1>
+</div>
+<div class="aline" *ngFor="let control of queations">
+   <app-reusableForms [form]="form" [controls]="control"></app-reusableForms>
+</div>
+<div class="aline">
+   <button mat-raised-button (click)="submit()">Submit</button>
+</div>
+<div style="float: right;margin-top: 20%;">
+   <button mat-raised-button color="primary" (click)="gotodynamic()">Go to dynamic form</button>
+</div>
